@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Application Form</title>
+    <meta charset="utf-8">
+    <meta name="view" content="with=device=width, initial-scale=1">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+        <u>
+            <center><h2>Application Form</h2></center>
+        </u>
+        <br>
+    <form>
+<form class="form" id="form"></form>
+<div class="form-control">
+    <label>Full Name:</label>
+    <input type="text" 
+    placeholder="Enter Full Name" id="fullname">
+    <small>Error Message</small>
+</div>
+<div class="form-control">
+    <label>Email Address:</label>
+    <input type="email" 
+    placeholder="Enter Email Address" id="email">
+    <small>Error Message</small>
+</div>
+<div class="form-control">
+<label>Phone Number:</label>
+    <input type="tel" 
+    placeholder="Enter Phone Number" id="phonenumber">
+    <small>Error Message</small>
+</div>
+<div class="form-control">
+   <label>Country:</label>
+  <select id="country" name="country">
+    <option value="Select">Select</option>
+    <option value="Australia">Australia</option> 
+    <option value="Brazil">Brazil</option>
+    <option value="Canada">Canada</option>
+    <option value="Denmark">Denmark</option>
+    <option value="Finland">Finland</option>
+    <option value="Japan">Japan</option>
+    <option value="Kenya">Kenya</option>
+    <option value="Oman">Oman</option>
+    <option value="Somalia">Somalia</option>
+    <option value="United Kindgom">United Kindgom</option>
+    <option value="United States of America">United States of America</option>
+    <small>Error Message</small>
+  </select>
+</div>
+<div class="form-control">
+<label>Gender:</label>
+<input type="radio" id="gender" value="male" name="user_gender"><label for="male" class="light">Male</label>
+<input type="radio" id="gender" value="female" name="user_gender"><label for="female" class="light">Female</label>
+<br>
+<small>Error Message</small>
+</div>
+<div class="form-control">
+    <label>Theory:</label><br>
+    <textarea name="message" id="theory" placeholder="Enter your theory" rows="5" cols="30"></textarea>
+    <br>
+    <small>Error Message</small>
+</div>
+<br>
+<button>Submit</button>
+</form>
+<script src="app.js"></script>
+</body>
+</html>
